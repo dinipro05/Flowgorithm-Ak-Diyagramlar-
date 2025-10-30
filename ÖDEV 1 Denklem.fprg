@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#246;dev 1"/>
+        <attribute name="authors" value="muham"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-06 08:57:46 &#214;S"/>
+        <attribute name="created" value="bXVoYW07TVVIQU1NRUQ7MjAyNS0xMC0wNjswODoxMTo1MSDDllM7MjU0Mg=="/>
+        <attribute name="edited" value="bXVoYW07TVVIQU1NRUQ7MjAyNS0xMC0wNjswODo1Nzo0NiDDllM7MTsyNjY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, D, x1, x2" type="Real" array="False" size=""/>
+            <output expression="&quot;a katsay&#305;s&#305;n&#305; giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a=0">
+                <then>
+                    <output expression="&quot;Hatal&#305; giri&#351;, ikinci derece de denklem belirtmez&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;L&#252;tfen b ve c katsay&#305;lar&#305;n&#305; giriniz&quot;" newline="True"/>
+                    <input variable="b"/>
+                    <input variable="c"/>
+                    <assign variable="D" expression="b^2-4*a*c"/>
+                    <if expression="D&gt;=0">
+                        <then>
+                            <assign variable="x1" expression="(-b+Sqrt(D))/(2*a)"/>
+                            <assign variable="x2" expression="(-b-Sqrt(D))/(2*a)"/>
+                            <output expression="&quot;K&#246;kler&quot;&amp;x1&amp;&quot; ve &quot;&amp;x2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reel k&#246;k yoktur,maalesef&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
